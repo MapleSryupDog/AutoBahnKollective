@@ -1,0 +1,34 @@
+
+.topDiv {
+width: 30%;
+top: 5%;
+left: 50%;
+transform: translate(-50%, -50%);
+position: absolute;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+
+/* Style the search box */
+#mySearch {
+    width: 200px;
+    font-size: 18px;
+    padding: 11px; 
+  }
+  
+  /* Style the navigation menu */
+  #myMenu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border-color: transparent;
+  }
+  
+  /* Style the navigation links */
+  #myMenu li a {
+    padding: 12px;
+    text-decoration: none;
+     display: block;
+     border-color: transparent;
+  }

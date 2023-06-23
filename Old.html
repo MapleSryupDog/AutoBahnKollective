@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="style.css">
+    <title>Restored Parts</title>
+    <link rel="icon" type="image/x-icon" href="speedometer.gif">
+</html>
+<body>
+    <div class="nav-bar">
+        <ul>
+          <li><a href="About.html">About us</a></li>
+        <li><a href="For Sale.html">For Sale Right Now</a></li>    
+        <li><a href="Whats New.html">Whats New</a></li>
+        <li><a href="index.html">Home</a></li>
+            </ul>
+
+            <div class="text">
+
+                <h1>Old Parts for Sale</h1>
+                <a href="For Sale.html">Go Back</a>
+            </div>
+            <div class="topDiv">
+              <link rel="stylesheet" href="search.css">   
+                <div class="searchTop">
+                  <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+          </button>
+          </div>
+          </div>
+          </div>
+            <div id="myMenu">
+              <li><div class="gallery">
+                <a href="#">
+                  <img src="" alt="Bettle" width="600" height="400">
+                </a>
+                <div class="desc">Restored Parts</div>
+              </div></li>
+              
+              <li><div class="gallery">
+                <a href="#">
+                  <img src="" alt="Bettle" width="600" height="400">
+                </a>
+                <div class="desc">Restored Parts</div>
+              </div></li>
+
+              <li><div class="gallery">
+                <a href="#">
+                  <img src="" alt="Bettle" width="600" height="400">
+                </a>
+                <div class="desc">Restored Parts</div>
+              </div></li>
+
+              <li><div class="gallery">
+                <a href="#">
+                  <img src="" alt="Bettle" width="600" height="400">
+                </a>
+                <div class="desc">Restored Parts</div>
+              </div></li>
+
+      </div>
+
+
+   
+    <script>
+      function myFunction() {
+        // Declare variables
+        var input, filter, ul, li, a, i;
+        input = document.getElementById("mySearch");
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("myMenu");
+        li = ul.getElementsByTagName("li");
+      
+        // Loop through all list items, and hide those who don't match the search query
+        for (i = 0; i < li.length; i++) {
+          a = li[i].getElementsByTagName("a")[0];
+          if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+          } else {
+            li[i].style.display = "none";
+          }
+        }
+      }
+      </script>
+</body>
